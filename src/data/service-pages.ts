@@ -11,80 +11,58 @@ export type ServicePageData = {
 
 export const servicePages: ServicePageData[] = [
   {
-    slug: "fixture-installation-bluffton-sc",
-    metaTitle:
-      "Fixture Installation in Bluffton, SC | Cider Hill Construction",
+    slug: "home-renovations",
+    metaTitle: "Home Renovations in Bluffton, SC | Cider Hill Construction",
     metaDescription:
-      "Light fixture, ceiling fan, chandelier, and hardware installation in Bluffton, SC. Owner-operated, licensed and insured. Call (207) 337-3008 for a free quote.",
-    h1: "Fixture Installation in Bluffton, SC",
-    eyebrow: "Fixture Installation",
+      "Home renovations in Bluffton, SC. Kitchens, bathrooms, flooring, trim, siding, and finish work. Owner-operated. Call (207) 337-3008 for a free quote.",
+    h1: "Home Renovations in Bluffton, SC",
+    eyebrow: "Home Renovations",
     intro:
-      "Cider Hill Construction handles fixture installation for homes and businesses in Bluffton, Hilton Head, and across the Lowcountry. From ceiling fans and light fixtures to chandeliers and hardware, every install is done cleanly and correctly.",
+      "Cider Hill Construction handles home renovations for homeowners throughout Bluffton, Hilton Head, and the Lowcountry. From kitchens and bathrooms to flooring, trim, siding, and finish work — complete renovation support with quality craftsmanship and dependable communication.",
     servicesList: [
-      "Light fixture installation and replacement",
-      "Ceiling fan installation",
-      "Chandelier installation",
-      "Hardware and small fixture installs",
-      "Interior and exterior fixture upgrades",
-      "Fixture installation as part of larger renovation projects",
+      "Kitchen renovation and updates",
+      "Bathroom remodeling",
+      "Laundry room and closet improvements",
+      "Flooring installation",
+      "Interior and exterior trim",
+      "Siding repair and replacement",
+      "Finish work and detail carpentry",
+      "Door and window work",
+      "Fixture installation",
     ],
     relatedSlugs: [
-      "handyman-services-bluffton-sc",
-      "kitchen-bathroom-renovations-bluffton-sc",
-      "interior-exterior-trim-repair-bluffton-sc",
+      "kitchen-bathroom-renovations",
+      "flooring",
+      "vinyl-siding-hardie-board",
     ],
   },
   {
-    slug: "interior-exterior-trim-repair-bluffton-sc",
-    metaTitle:
-      "Interior & Exterior Trim Repair in Bluffton, SC | Cider Hill Construction",
+    slug: "handyman-services",
+    metaTitle: "Handyman Services in Bluffton, SC | Cider Hill Construction",
     metaDescription:
-      "Baseboards, crown molding, door casing, and exterior trim repair in Bluffton, SC. Owner-operated. Call (207) 337-3008 for a free quote.",
-    h1: "Interior & Exterior Trim Repair in Bluffton, SC",
-    eyebrow: "Trim & Carpentry",
+      "Handyman services in Bluffton, SC. Everyday repairs, punch-list work, fixtures, doors, trim, flooring, and more. Call (207) 337-3008 for a free quote.",
+    h1: "Handyman Services in Bluffton, SC",
+    eyebrow: "Handyman",
     intro:
-      "Clean trim work makes a real difference in how a home looks and feels. Cider Hill Construction handles interior and exterior trim repair throughout Bluffton, Hilton Head, and the Lowcountry — baseboards, crown molding, door casing, and more.",
+      "Cider Hill Construction provides handyman services throughout Bluffton, Hilton Head, and the surrounding Lowcountry. No job is too small. Whether it is a punch list from a home inspection, a repair that has been waiting, or an install that needs to be done right — Cider Hill handles it.",
     servicesList: [
-      "Baseboard installation and repair",
-      "Crown molding installation",
-      "Door casing and window casing",
-      "Exterior trim repair",
-      "Wood rot repair and trim replacement",
-      "Finish carpentry and detail work",
-      "Trim as part of renovation projects",
+      "Everyday home repairs",
+      "Home inspection punch list work",
+      "Property maintenance tasks",
+      "Fixture installation and replacement",
+      "Door and window adjustments",
+      "Trim and carpentry repairs",
+      "Flooring repairs",
+      "General maintenance and small project support",
     ],
     relatedSlugs: [
-      "home-renovations-bluffton-sc",
-      "vinyl-siding-hardie-board-bluffton-sc",
-      "kitchen-bathroom-renovations-bluffton-sc",
+      "home-renovations",
+      "fixture-installation",
+      "doors-windows-hardware",
     ],
   },
   {
-    slug: "vinyl-siding-hardie-board-bluffton-sc",
-    metaTitle:
-      "Vinyl Siding & Hardie Board Installation in Bluffton, SC | Cider Hill Construction",
-    metaDescription:
-      "Vinyl siding and Hardie board installation and repair in Bluffton, SC. Exterior upgrades for Lowcountry homes. Call (207) 337-3008 for a free quote.",
-    h1: "Vinyl Siding & Hardie Board Installation and Repair in Bluffton, SC",
-    eyebrow: "Siding & Exterior",
-    intro:
-      "Cider Hill Construction handles siding repair, replacement, and Hardie board installation for homes in Bluffton, Hilton Head, and the surrounding Lowcountry. Quality exterior work that holds up to the South Carolina climate.",
-    servicesList: [
-      "Vinyl siding installation and replacement",
-      "Hardie board (fiber cement) siding installation",
-      "Siding repair and patch work",
-      "Exterior panel replacement",
-      "Siding upgrades as part of renovation projects",
-      "Trim and exterior finish work alongside siding",
-    ],
-    relatedSlugs: [
-      "interior-exterior-trim-repair-bluffton-sc",
-      "home-renovations-bluffton-sc",
-      "windows-doors-bluffton-sc",
-    ],
-  },
-  {
-    slug: "kitchen-bathroom-renovations-bluffton-sc",
+    slug: "kitchen-bathroom-renovations",
     metaTitle:
       "Kitchen & Bathroom Renovations in Bluffton, SC | Cider Hill Construction",
     metaDescription:
@@ -104,13 +82,13 @@ export const servicePages: ServicePageData[] = [
       "Cabinet hardware and small upgrades",
     ],
     relatedSlugs: [
-      "flooring-installation-bluffton-sc",
-      "fixture-installation-bluffton-sc",
-      "laundry-rooms-closets-bluffton-sc",
+      "flooring",
+      "fixture-installation",
+      "laundry-rooms-closets",
     ],
   },
   {
-    slug: "flooring-installation-bluffton-sc",
+    slug: "flooring",
     metaTitle:
       "Flooring Installation and Repair in Bluffton, SC | Cider Hill Construction",
     metaDescription:
@@ -128,13 +106,110 @@ export const servicePages: ServicePageData[] = [
       "Flooring as part of kitchen, bathroom, or home renovation projects",
     ],
     relatedSlugs: [
-      "kitchen-bathroom-renovations-bluffton-sc",
-      "home-renovations-bluffton-sc",
-      "laundry-rooms-closets-bluffton-sc",
+      "kitchen-bathroom-renovations",
+      "home-renovations",
+      "laundry-rooms-closets",
     ],
   },
   {
-    slug: "laundry-rooms-closets-bluffton-sc",
+    slug: "interior-exterior-trim",
+    metaTitle:
+      "Interior & Exterior Trim Repair in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Baseboards, crown molding, door casing, and exterior trim repair in Bluffton, SC. Owner-operated. Call (207) 337-3008 for a free quote.",
+    h1: "Interior & Exterior Trim Repair in Bluffton, SC",
+    eyebrow: "Trim & Carpentry",
+    intro:
+      "Clean trim work makes a real difference in how a home looks and feels. Cider Hill Construction handles interior and exterior trim repair throughout Bluffton, Hilton Head, and the Lowcountry — baseboards, crown molding, door casing, and more.",
+    servicesList: [
+      "Baseboard installation and repair",
+      "Crown molding installation",
+      "Door casing and window casing",
+      "Exterior trim repair",
+      "Wood rot repair and trim replacement",
+      "Finish carpentry and detail work",
+      "Trim as part of renovation projects",
+    ],
+    relatedSlugs: [
+      "home-renovations",
+      "vinyl-siding-hardie-board",
+      "kitchen-bathroom-renovations",
+    ],
+  },
+  {
+    slug: "vinyl-siding-hardie-board",
+    metaTitle:
+      "Vinyl Siding & Hardie Board Installation in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Vinyl siding and Hardie board installation and repair in Bluffton, SC. Exterior upgrades for Lowcountry homes. Call (207) 337-3008 for a free quote.",
+    h1: "Vinyl Siding & Hardie Board Installation and Repair in Bluffton, SC",
+    eyebrow: "Siding & Exterior",
+    intro:
+      "Cider Hill Construction handles siding repair, replacement, and Hardie board installation for homes in Bluffton, Hilton Head, and the surrounding Lowcountry. Quality exterior work that holds up to the South Carolina climate.",
+    servicesList: [
+      "Vinyl siding installation and replacement",
+      "Hardie board (fiber cement) siding installation",
+      "Siding repair and patch work",
+      "Exterior panel replacement",
+      "Siding upgrades as part of renovation projects",
+      "Trim and exterior finish work alongside siding",
+    ],
+    relatedSlugs: [
+      "interior-exterior-trim",
+      "home-renovations",
+      "doors-windows-hardware",
+    ],
+  },
+  {
+    slug: "doors-windows-hardware",
+    metaTitle:
+      "Window & Door Installation and Repair in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Interior doors, exterior doors, window repair, trim, and hardware installation in Bluffton, SC. Call (207) 337-3008 for a free quote.",
+    h1: "Window & Door Installation and Repair in Bluffton, SC",
+    eyebrow: "Doors & Windows",
+    intro:
+      "Cider Hill Construction handles door and window work for homes in Bluffton, Hilton Head, and surrounding Lowcountry communities. From interior door installation to exterior door replacement and window repair, quality work that functions and looks right.",
+    servicesList: [
+      "Interior door installation and replacement",
+      "Exterior door installation and replacement",
+      "Window repair and hardware replacement",
+      "Door and window trim installation",
+      "Weatherstripping and door hardware",
+      "Door and window work as part of renovation projects",
+    ],
+    relatedSlugs: [
+      "interior-exterior-trim",
+      "handyman-services",
+      "home-renovations",
+    ],
+  },
+  {
+    slug: "fixture-installation",
+    metaTitle:
+      "Fixture Installation in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Light fixture, ceiling fan, chandelier, and hardware installation in Bluffton, SC. Owner-operated, licensed and insured. Call (207) 337-3008 for a free quote.",
+    h1: "Fixture Installation in Bluffton, SC",
+    eyebrow: "Fixture Installation",
+    intro:
+      "Cider Hill Construction handles fixture installation for homes and businesses in Bluffton, Hilton Head, and across the Lowcountry. From ceiling fans and light fixtures to chandeliers and hardware, every install is done cleanly and correctly.",
+    servicesList: [
+      "Light fixture installation and replacement",
+      "Ceiling fan installation",
+      "Chandelier installation",
+      "Hardware and small fixture installs",
+      "Interior and exterior fixture upgrades",
+      "Fixture installation as part of larger renovation projects",
+    ],
+    relatedSlugs: [
+      "handyman-services",
+      "kitchen-bathroom-renovations",
+      "interior-exterior-trim",
+    ],
+  },
+  {
+    slug: "laundry-rooms-closets",
     metaTitle:
       "Laundry Room & Closet Upgrades in Bluffton, SC | Cider Hill Construction",
     metaDescription:
@@ -153,39 +228,14 @@ export const servicePages: ServicePageData[] = [
       "Hardware and fixture installation",
     ],
     relatedSlugs: [
-      "kitchen-bathroom-renovations-bluffton-sc",
-      "flooring-installation-bluffton-sc",
-      "interior-exterior-trim-repair-bluffton-sc",
+      "kitchen-bathroom-renovations",
+      "flooring",
+      "interior-exterior-trim",
     ],
   },
   {
-    slug: "windows-doors-bluffton-sc",
-    metaTitle:
-      "Window & Door Installation and Repair in Bluffton, SC | Cider Hill Construction",
-    metaDescription:
-      "Interior doors, exterior doors, window repair, trim, and hardware installation in Bluffton, SC. Call (207) 337-3008 for a free quote.",
-    h1: "Window & Door Installation and Repair in Bluffton, SC",
-    eyebrow: "Doors & Windows",
-    intro:
-      "Cider Hill Construction handles door and window work for homes in Bluffton, Hilton Head, and surrounding Lowcountry communities. From interior door installation to exterior door replacement and window repair, quality work that functions and looks right.",
-    servicesList: [
-      "Interior door installation and replacement",
-      "Exterior door installation and replacement",
-      "Window repair and hardware replacement",
-      "Door and window trim installation",
-      "Weatherstripping and door hardware",
-      "Door and window work as part of renovation projects",
-    ],
-    relatedSlugs: [
-      "interior-exterior-trim-repair-bluffton-sc",
-      "handyman-services-bluffton-sc",
-      "home-renovations-bluffton-sc",
-    ],
-  },
-  {
-    slug: "roofing-repairs-bluffton-sc",
-    metaTitle:
-      "Roofing Repairs in Bluffton, SC | Cider Hill Construction",
+    slug: "roofing-repairs",
+    metaTitle: "Roofing Repairs in Bluffton, SC | Cider Hill Construction",
     metaDescription:
       "Minor roofing repairs and exterior repairs for homes in Bluffton, SC. Owner-operated. Call (207) 337-3008 for a free quote.",
     h1: "Roofing Repairs in Bluffton, SC",
@@ -199,13 +249,13 @@ export const servicePages: ServicePageData[] = [
       "Roof repair as part of broader exterior projects",
     ],
     relatedSlugs: [
-      "vinyl-siding-hardie-board-bluffton-sc",
-      "handyman-services-bluffton-sc",
-      "home-renovations-bluffton-sc",
+      "vinyl-siding-hardie-board",
+      "handyman-services",
+      "home-renovations",
     ],
   },
   {
-    slug: "commercial-construction-bluffton-sc",
+    slug: "commercial-construction",
     metaTitle:
       "Commercial Construction & Property Improvements in Bluffton, SC | Cider Hill Construction",
     metaDescription:
@@ -224,62 +274,9 @@ export const servicePages: ServicePageData[] = [
       "Exterior repairs for commercial properties",
     ],
     relatedSlugs: [
-      "handyman-services-bluffton-sc",
-      "flooring-installation-bluffton-sc",
-      "fixture-installation-bluffton-sc",
-    ],
-  },
-  {
-    slug: "handyman-services-bluffton-sc",
-    metaTitle:
-      "Handyman Services in Bluffton, SC | Cider Hill Construction",
-    metaDescription:
-      "Handyman services in Bluffton, SC. Everyday repairs, punch-list work, fixtures, doors, trim, flooring, and more. Call (207) 337-3008 for a free quote.",
-    h1: "Handyman Services in Bluffton, SC",
-    eyebrow: "Handyman",
-    intro:
-      "Cider Hill Construction provides handyman services throughout Bluffton, Hilton Head, and the surrounding Lowcountry. No job is too small. Whether it is a punch list from a home inspection, a repair that has been waiting, or an install that needs to be done right — Cider Hill handles it.",
-    servicesList: [
-      "Everyday home repairs",
-      "Home inspection punch list work",
-      "Property maintenance tasks",
-      "Fixture installation and replacement",
-      "Door and window adjustments",
-      "Trim and carpentry repairs",
-      "Flooring repairs",
-      "General maintenance and small project support",
-    ],
-    relatedSlugs: [
-      "home-renovations-bluffton-sc",
-      "fixture-installation-bluffton-sc",
-      "windows-doors-bluffton-sc",
-    ],
-  },
-  {
-    slug: "home-renovations-bluffton-sc",
-    metaTitle:
-      "Home Renovations in Bluffton, SC | Cider Hill Construction",
-    metaDescription:
-      "Home renovations in Bluffton, SC. Kitchens, bathrooms, flooring, trim, siding, and finish work. Owner-operated. Call (207) 337-3008 for a free quote.",
-    h1: "Home Renovations in Bluffton, SC",
-    eyebrow: "Home Renovations",
-    intro:
-      "Cider Hill Construction handles home renovations for homeowners throughout Bluffton, Hilton Head, and the Lowcountry. From kitchens and bathrooms to flooring, trim, siding, and finish work — complete renovation support with quality craftsmanship and dependable communication.",
-    servicesList: [
-      "Kitchen renovation and updates",
-      "Bathroom remodeling",
-      "Laundry room and closet improvements",
-      "Flooring installation",
-      "Interior and exterior trim",
-      "Siding repair and replacement",
-      "Finish work and detail carpentry",
-      "Door and window work",
-      "Fixture installation",
-    ],
-    relatedSlugs: [
-      "kitchen-bathroom-renovations-bluffton-sc",
-      "flooring-installation-bluffton-sc",
-      "vinyl-siding-hardie-board-bluffton-sc",
+      "handyman-services",
+      "flooring",
+      "fixture-installation",
     ],
   },
 ];

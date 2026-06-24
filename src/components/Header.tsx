@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { business, nav } from "../data/site";
 import { cn } from "../lib/cn";
 import { PhoneIcon, MenuIcon, CloseIcon, ArrowRight } from "./icons";
@@ -6,6 +7,8 @@ import { PhoneIcon, MenuIcon, CloseIcon, ArrowRight } from "./icons";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -32,8 +35,8 @@ export default function Header() {
     >
       <div className="container-x flex h-16 items-center justify-between md:h-20">
         {/* Brand — logo + name */}
-        <a
-          href="#top"
+        <Link
+          to="/"
           className="flex items-center gap-3"
           aria-label={`${business.shortName} — home`}
         >
@@ -50,14 +53,14 @@ export default function Header() {
               Construction &amp; Handyman
             </span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {nav.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={isHome ? item.href : `/${item.href}`}
               className="text-sm font-medium text-cream/80 transition-colors hover:text-cream"
             >
               {item.label}
@@ -129,7 +132,7 @@ export default function Header() {
           {nav.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={isHome ? item.href : `/${item.href}`}
               onClick={() => setOpen(false)}
               className="rounded-lg px-3 py-3 text-base font-medium text-cream/85 transition-colors hover:bg-white/5 hover:text-cream"
             >
@@ -148,6 +151,7 @@ export default function Header() {
           </a>
           <a
             href={business.phoneHref}
+            onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-cream/20 px-5 py-3 text-base font-semibold text-cream"
           >
             <PhoneIcon className="h-4 w-4" />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { services } from "../data/site";
 import SectionHeading from "./SectionHeading";
 import { ArrowRight } from "./icons";
@@ -27,13 +28,13 @@ export default function Services() {
                 {service.description}
               </p>
               {service.slug && (
-                <a
-                  href={`/services/${service.slug}`}
+                <Link
+                  to={`/services/${service.slug}`}
                   className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-forest transition-colors hover:text-copper"
                 >
                   Learn more
                   <ArrowRight className="h-3.5 w-3.5" />
-                </a>
+                </Link>
               )}
             </article>
           ))}

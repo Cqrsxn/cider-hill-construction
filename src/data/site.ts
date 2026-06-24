@@ -50,67 +50,67 @@ export type Service = {
 export const services: Service[] = [
   {
     title: "Home Renovations",
-    slug: "home-renovations-bluffton-sc",
+    slug: "home-renovations",
     description:
       "Kitchens, bathrooms, laundry rooms, closets, flooring, trim, siding, and finish work for homes throughout Bluffton and the Lowcountry.",
   },
   {
     title: "Handyman Services",
-    slug: "handyman-services-bluffton-sc",
+    slug: "handyman-services",
     description:
       "Everyday repairs, punch-list work, property maintenance, fixtures, doors, trim, and general repairs handled with the same care as larger projects.",
   },
   {
     title: "Kitchen & Bathroom Renovations",
-    slug: "kitchen-bathroom-renovations-bluffton-sc",
+    slug: "kitchen-bathroom-renovations",
     description:
       "Bathroom updates, kitchen improvements, tile, flooring, fixtures, vanities, trim, and finish work for spaces that look and function better.",
   },
   {
     title: "Flooring",
-    slug: "flooring-installation-bluffton-sc",
+    slug: "flooring",
     description:
       "Flooring installation, repair, and upgrade work for homes in Bluffton, Hilton Head, and across the Lowcountry.",
   },
   {
     title: "Interior & Exterior Trim",
-    slug: "interior-exterior-trim-repair-bluffton-sc",
+    slug: "interior-exterior-trim",
     description:
       "Baseboards, crown molding, door casing, exterior trim repair, and detail work that gives homes a cleaner, more finished look.",
   },
   {
     title: "Vinyl Siding & Hardie Board",
-    slug: "vinyl-siding-hardie-board-bluffton-sc",
+    slug: "vinyl-siding-hardie-board",
     description:
       "Siding repair, replacement, Hardie board installation, and exterior upgrade work for homes in Bluffton and surrounding areas.",
   },
   {
     title: "Doors, Windows & Hardware",
-    slug: "windows-doors-bluffton-sc",
+    slug: "doors-windows-hardware",
     description:
       "Interior doors, exterior doors, window repair, trim, hardware installation, and weatherproofing for Lowcountry homes.",
   },
   {
     title: "Fixture Installation",
-    slug: "fixture-installation-bluffton-sc",
+    slug: "fixture-installation",
     description:
       "Light fixtures, ceiling fans, chandeliers, hardware, and small installation work completed cleanly and correctly.",
   },
   {
     title: "Laundry Rooms & Closets",
-    slug: "laundry-rooms-closets-bluffton-sc",
+    slug: "laundry-rooms-closets",
     description:
       "Shelving, storage solutions, layout improvements, trim, doors, and finish work for laundry rooms and closets.",
   },
   {
     title: "Roofing Repairs",
-    slug: "roofing-repairs-bluffton-sc",
+    slug: "roofing-repairs",
     description:
       "Minor roof repairs and exterior repair work for homes in Bluffton and the Lowcountry.",
   },
   {
     title: "Commercial Construction",
-    slug: "commercial-construction-bluffton-sc",
+    slug: "commercial-construction",
     description:
       "Commercial repairs, tenant improvements, finish work, and property updates for businesses and property owners throughout Bluffton.",
   },
