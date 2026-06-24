@@ -25,18 +25,20 @@ export default function WorkWeHaveDone() {
         <div className="mt-12 grid items-center gap-8 overflow-hidden rounded-3xl border border-cream-dark bg-white shadow-lift lg:grid-cols-[1.2fr_1fr]">
           {/* Video */}
           <div
-            className="relative overflow-hidden"
+            className="relative min-h-[240px] overflow-hidden sm:min-h-[300px] lg:min-h-0"
             aria-label="Fence construction project video"
           >
             <video
               className="aspect-video w-full object-cover lg:aspect-auto lg:h-full"
-              src="/images/fence.mp4"
+              poster="/images/fence-poster.jpg"
               autoPlay
               muted
               loop
               playsInline
               preload="metadata"
-            />
+            >
+              <source src="/images/fence.mp4" type="video/mp4" />
+            </video>
             {/* Play overlay label */}
             <div className="absolute left-4 top-4 rounded-full bg-navy/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-cream backdrop-blur-sm">
               Exterior &amp; Fence Work
