@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Cider Hill Construction — Design Tokens
+   Rustic-premium contractor palette: deep navy, forest green,
+   warm cream, charcoal text, copper/wood accent.
+------------------------------------------------------------------- */
+@theme {
+  --color-navy: #14233a;
+  --color-navy-dark: #0e1a2c;
+  --color-navy-soft: #1d3454;
+
+  --color-forest: #2f5d4e;
+  --color-forest-light: #3c7363;
+  --color-forest-soft: #e7efe9;
+
+  --color-cream: #f7f2e8;
+  --color-cream-dark: #efe7d6;
+
+  --color-charcoal: #23262b;
+  --color-charcoal-soft: #4a4f57;
+
+  --color-copper: #b27a45;
+  --color-copper-light: #c8965f;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 1px 2px rgba(20, 35, 58, 0.04),
+    0 8px 24px rgba(20, 35, 58, 0.08);
+  --shadow-lift: 0 2px 4px rgba(20, 35, 58, 0.06),
+    0 18px 40px rgba(20, 35, 58, 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    background-color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--color-navy);
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container-x {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-x {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Subtle woodgrain / paper texture for warm sections */
+  .texture-wood {
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(178, 122, 69, 0.035) 0px,
+      rgba(178, 122, 69, 0.035) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
