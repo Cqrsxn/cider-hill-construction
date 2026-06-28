@@ -279,6 +279,82 @@ export const servicePages: ServicePageData[] = [
       "fixture-installation",
     ],
   },
+  {
+    slug: "stair-construction",
+    metaTitle: "Stair Construction in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Custom stair construction and carpentry in Bluffton, SC. Framing, finish work, and structural carpentry. Call (207) 337-3008 for a free quote.",
+    h1: "Stair Construction in Bluffton, SC",
+    eyebrow: "Stair Construction",
+    intro:
+      "Cider Hill Construction builds and repairs stairs for homes throughout Bluffton, Hilton Head, and the Lowcountry. Custom stair builds, framing, finish carpentry, and structural work — done with precision and care on every project.",
+    servicesList: [
+      "Custom stair framing and construction",
+      "Interior stair builds",
+      "Exterior stair and deck stair construction",
+      "Stair repair and replacement",
+      "Railing and baluster installation",
+      "Finish carpentry and tread work",
+      "Structural framing alongside stair projects",
+    ],
+    relatedSlugs: [
+      "interior-exterior-trim",
+      "home-renovations",
+      "handyman-services",
+    ],
+  },
+  {
+    slug: "kitchen-remodel",
+    metaTitle:
+      "Kitchen Remodeling in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Kitchen remodeling and renovation in Bluffton, SC. Cabinetry, countertops, tile, fixtures, and finish work. Call (207) 337-3008 for a free quote.",
+    h1: "Kitchen Remodeling in Bluffton, SC",
+    eyebrow: "Kitchen Remodel",
+    intro:
+      "Cider Hill Construction handles kitchen remodels and updates for homeowners in Bluffton, Hilton Head, and across the Lowcountry. From cabinetry and countertops to tile, fixtures, and finish work — quality kitchen renovations from start to finish.",
+    servicesList: [
+      "Full kitchen remodels and renovations",
+      "Cabinet installation and updates",
+      "Countertop installation",
+      "Backsplash and tile work",
+      "Kitchen fixture installation",
+      "Flooring in kitchen spaces",
+      "Finish carpentry and trim",
+      "Paint and interior finish work",
+    ],
+    relatedSlugs: [
+      "kitchen-bathroom-renovations",
+      "flooring",
+      "fixture-installation",
+    ],
+  },
+  {
+    slug: "exterior-renovation",
+    metaTitle:
+      "Exterior Home Renovation in Bluffton, SC | Cider Hill Construction",
+    metaDescription:
+      "Exterior home renovation, siding, trim, and curb appeal upgrades in Bluffton, SC. Owner-operated. Call (207) 337-3008 for a free quote.",
+    h1: "Exterior Home Renovation in Bluffton, SC",
+    eyebrow: "Exterior Renovation",
+    intro:
+      "Cider Hill Construction handles exterior home renovations for properties in Bluffton, Hilton Head, and the surrounding Lowcountry. From siding and trim to full exterior overhauls — clean, lasting work that holds up to the South Carolina climate.",
+    servicesList: [
+      "Full exterior renovation and makeovers",
+      "Siding repair and replacement",
+      "Exterior trim and finish work",
+      "Wood rot repair",
+      "Deck and porch repairs",
+      "Exterior painting prep",
+      "Curb appeal improvements",
+      "Exterior projects alongside home renovation work",
+    ],
+    relatedSlugs: [
+      "vinyl-siding-hardie-board",
+      "interior-exterior-trim",
+      "home-renovations",
+    ],
+  },
 ];
 
 export function getServicePageBySlug(

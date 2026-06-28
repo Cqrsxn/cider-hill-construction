@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { business } from "../data/site";
 import { ArrowRight } from "./icons";
 
@@ -81,6 +82,106 @@ export default function WorkWeHaveDone() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
           </div>
+        </div>
+
+        {/* Additional project cards */}
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          {/* Stair Build */}
+          <article
+            className="overflow-hidden rounded-3xl border border-cream-dark bg-white shadow-soft"
+            aria-label="Stair build project"
+          >
+            <div className="relative overflow-hidden">
+              <video
+                className="aspect-video w-full object-cover"
+                src="/images/stairsbuild-optimized.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <div className="absolute left-4 top-4 rounded-full bg-navy/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-cream backdrop-blur-sm">
+                Stair Build
+              </div>
+            </div>
+            <div className="p-7">
+              <h3 className="font-display text-xl text-navy sm:text-2xl">
+                Stair Construction &amp; Carpentry
+              </h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">
+                Custom stair builds and structural carpentry work for homes
+                across Bluffton and the Lowcountry. Cider Hill delivers clean
+                cuts, solid framing, and finished results built to last.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {["Stair Construction", "Carpentry", "Framing", "Finish Work"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-copper/25 bg-copper/6 px-3 py-1 text-xs font-semibold text-copper"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <Link
+                to="/services/stair-construction"
+                className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-forest transition-colors hover:text-copper"
+              >
+                Learn more
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </article>
+
+          {/* Kitchen Remodel */}
+          <article
+            className="overflow-hidden rounded-3xl border border-cream-dark bg-white shadow-soft"
+            aria-label="Kitchen remodel project"
+          >
+            <div className="relative overflow-hidden">
+              <video
+                className="aspect-video w-full object-cover"
+                src="/images/kitchenremodel-optimized.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <div className="absolute left-4 top-4 rounded-full bg-navy/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-cream backdrop-blur-sm">
+                Kitchen Remodel
+              </div>
+            </div>
+            <div className="p-7">
+              <h3 className="font-display text-xl text-navy sm:text-2xl">
+                Kitchen Remodel
+              </h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">
+                Full kitchen remodels and updates for Bluffton-area homeowners
+                who want a functional, beautiful space. Cider Hill handles
+                cabinetry, countertops, tile, fixtures, and finish work — from
+                cosmetic refreshes to complete kitchen renovations.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {["Kitchen Remodeling", "Cabinetry", "Countertops", "Tile Work"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-copper/25 bg-copper/6 px-3 py-1 text-xs font-semibold text-copper"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <Link
+                to="/services/kitchen-remodel"
+                className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-forest transition-colors hover:text-copper"
+              >
+                Learn more
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </article>
         </div>
 
         {/* Mid-section CTA */}
