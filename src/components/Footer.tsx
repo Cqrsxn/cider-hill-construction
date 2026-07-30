@@ -183,6 +183,15 @@ export default function Footer() {
             © {year} {business.name}. All rights reserved.
           </p>
           <p>Quality New England Craftsmanship · Licensed &amp; Insured · Bluffton, SC</p>
+          <p>
+            Site by{" "}
+            <a
+              href="https://handrandevelopment.com"
+              className="transition-colors hover:text-cream"
+            >
+              Handran Development
+            </a>
+          </p>
         </div>
       </div>
     </footer>
