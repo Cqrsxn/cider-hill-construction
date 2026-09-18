@@ -101,3 +101,15 @@ export const CameraIcon = (p: IconProps) => (
     <circle cx="12" cy="13" r="3.5" />
   </svg>
 );
+
+export const ArrowLeft = (p: IconProps) => (
+  <svg {...base} {...p} aria-hidden="true">
+    <path d="M19 12H5M11 6l-6 6 6 6" />
+  </svg>
+);
+
+export const ArrowUpRight = (p: IconProps) => (
+  <svg {...base} {...p} aria-hidden="true">
+    <path d="M7 17 17 7M7 7h10v10" />
+  </svg>
+);

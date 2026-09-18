@@ -20,14 +20,15 @@ Marketing website for **Cider Hill Construction and Handyman Services LLC**, an 
 - **Build tool:** Vite
 - **Styling:** Tailwind CSS v4 (CSS `@theme` tokens in `src/index.css`)
 - **Routing:** react-router-dom v7
-- **Fonts:** Fraunces (display) + Inter (sans) via Google Fonts
+- **Fonts:** Archivo Expanded (display, self-hosted variable woff2) + Arial (body, system font)
+- **Prerendering:** every route is rendered to static HTML by `scripts/prerender.mjs` (Playwright) as part of `npm run build`
 
 ## Local Development
 
 ```bash
 npm install
 npm run dev
-# → http://localhost:5174
+# → http://localhost:5173
 ```
 
 ## Build

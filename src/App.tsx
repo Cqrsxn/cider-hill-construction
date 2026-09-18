@@ -1,50 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import WorkWeHaveDone from "./components/WorkWeHaveDone";
-import InteriorWork from "./components/InteriorWork";
-import CommercialSection from "./components/CommercialSection";
-import WhyChooseUs from "./components/WhyChooseUs";
-import About from "./components/About";
-import Reviews from "./components/Reviews";
-import SocialFollow from "./components/SocialFollow";
-import ServiceArea from "./components/ServiceArea";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import StickyMobileCTA from "./components/StickyMobileCTA";
-import ServicePage from "./pages/ServicePage";
-
-function HomePage() {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <WorkWeHaveDone />
-        <InteriorWork />
-        <CommercialSection />
-        <WhyChooseUs />
-        <About />
-        <Reviews />
-        <SocialFollow />
-        <ServiceArea />
-        <Contact />
-      </main>
-      <Footer />
-      <StickyMobileCTA />
-      <div className="h-20 md:hidden" aria-hidden="true" />
-    </>
-  );
-}
+import RootLayout from "./layouts/RootLayout";
+import Home from "./pages/Home";
+import ServicesIndex from "./pages/ServicesIndex";
+import ServiceDetail from "./pages/ServiceDetail";
+import WorkIndex from "./pages/WorkIndex";
+import WorkDetail from "./pages/WorkDetail";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/services/:slug" element={<ServicePage />} />
+        <Route element={<RootLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesIndex />} />
+          <Route path="/services/:slug" element={<ServiceDetail />} />
+          <Route path="/work" element={<WorkIndex />} />
+          <Route path="/work/:slug" element={<WorkDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

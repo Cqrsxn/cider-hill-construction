@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="theme-color" content="#14233a" />
+    <meta name="theme-color" content="#f4f1ec" />
 
     <!-- Primary SEO -->
     <title>Cider Hill Construction &amp; Handyman Services | Bluffton, SC</title>
     <meta
       name="description"
-      content="Cider Hill Construction and Handyman Services LLC — licensed and insured construction, renovation, and handyman services in Bluffton, SC. Serving Hilton Head, Okatie, Hardeeville, Beaufort, and the Lowcountry. Call (207) 337-3008."
-    />
-    <meta
-      name="keywords"
-      content="Bluffton construction services, Bluffton handyman services, home renovations Bluffton SC, kitchen renovations Bluffton SC, bathroom renovations Bluffton SC, trim repair Bluffton SC, siding repair Bluffton SC, Hardie board installation Bluffton SC, flooring installation Bluffton SC, window door repair Bluffton SC, roofing repair Bluffton SC, commercial construction Bluffton SC, Lowcountry handyman, Hilton Head handyman, Okatie handyman, Hardeeville home repair, Beaufort home renovations, Cider Hill Construction"
+      content="Owner-operated construction and handyman work in Bluffton, South Carolina. Renovations, repairs, trim, siding, flooring and finish work. Licensed and insured."
     />
     <link rel="canonical" href="https://ciderhillconstruction.com/" />
 
@@ -27,7 +23,7 @@
     />
     <meta
       property="og:description"
-      content="Licensed and insured construction, renovation, and handyman services in Bluffton, SC and the Lowcountry. Call (207) 337-3008 for a free quote."
+      content="Owner-operated construction and handyman work in Bluffton, South Carolina. Licensed and insured. Call (207) 337-3008 for a free quote."
     />
     <meta property="og:url" content="https://ciderhillconstruction.com/" />
     <meta property="og:image" content="/og-image.svg" />
@@ -40,17 +36,29 @@
     />
     <meta
       name="twitter:description"
-      content="Licensed and insured construction and handyman services in Bluffton, SC. Call (207) 337-3008."
+      content="Owner-operated construction and handyman work in Bluffton, South Carolina. Licensed and insured. Call (207) 337-3008 for a free quote."
     />
     <meta name="twitter:image" content="/og-image.svg" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts: self-hosted Archivo variable. Arial is a system font, 0 bytes. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/archivo-var-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
+
+    <!-- Enables the pre-reveal state before first paint. If JS is off or the
+         user prefers reduced motion this never runs, and everything stays
+         plainly visible, which is what prerendered HTML and crawlers need. -->
+    <script>
+      try {
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.setAttribute("data-reveal-ready", "");
+        }
+      } catch (e) {}
+    </script>
 
     <!-- LocalBusiness / Contractor structured data -->
     <script type="application/ld+json">
@@ -83,7 +91,7 @@
           "Sun City, SC",
           "Palmetto Bluff, SC"
         ],
-        "description": "Owner-operated construction and handyman services in Bluffton, SC. From major renovations to everyday repairs — fixture installation, trim, siding, flooring, bathroom and kitchen renovations, roofing repairs, and commercial work. Licensed and insured, serving the Lowcountry.",
+        "description": "Owner-operated construction and handyman services in Bluffton, SC. Renovations, repairs, fixture installation, trim, siding, flooring, kitchen and bathroom work, roofing repairs and commercial projects. Licensed and insured.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Construction & Handyman Services",

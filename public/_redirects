@@ -1,1 +1,4 @@
-/* /index.html 200
+# Every route is prerendered to its own index.html, so Netlify serves those
+# directly. The old catch-all `/* /index.html 200` would now turn genuine
+# 404s into soft-200 home pages, which is worse for SEO than a real 404.
+/*    /404/index.html    404
